@@ -1,18 +1,15 @@
 # SET_NULL is default. or CASCADE
 
-#  Examples Only below, delete them
-#
-#type User {
-#    id: ID! @unique
-#    name: String!
-#    email: String! @unique
-#    password: String!
-#    posts: [Post!]! @relation(name: "PostToUser", onDelete: CASCADE)
-#    comments: [Comment!]! @relation(name: "CommentToUser", onDelete: CASCADE)
-#    updatedAt: DateTime!
-#    createdAt: DateTime!
-#}
-#
+type User {
+    id: ID! @unique
+    name: String!
+    email: String! @unique
+    password: String!
+    updatedAt: DateTime!
+    createdAt: DateTime!
+}
+
+##  Examples Only below, delete them
 #type Post {
 #    id: ID! @unique
 #    title: String!
